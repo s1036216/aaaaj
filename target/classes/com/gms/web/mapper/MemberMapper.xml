@@ -21,7 +21,7 @@
 
 <select id="login" 
 		resultType="com.gms.web.member.MemberDTO"
-		parameterType="com.gms.web.command.CommandDTO">
+		parameterType="com.gms.web.command.Command">
 		select 
 		member_id as id,
 		name,
@@ -36,7 +36,7 @@
 
 <select id="selectAll" 
 		resultType="com.gms.web.member.StudentDTO"   
-		parameterType="com.gms.web.command.CommandDTO">
+		parameterType="com.gms.web.command.Command">
 		 SELECT *
          FROM ( 
          SELECT @NO := @NO + 1 AS num, A.*
@@ -52,7 +52,7 @@
          
   <select id="search" 
 		resultType="com.gms.web.member.StudentDTO"
-		parameterType="com.gms.web.command.CommandDTO">
+		parameterType="com.gms.web.command.Command">
 		 SELECT *
          FROM ( 
          SELECT @NO := @NO + 1 AS num, A.*
@@ -69,7 +69,7 @@
          
            <select id="selectById" 
 		resultType="com.gms.web.member.StudentDTO"
-		parameterType="com.gms.web.command.CommandDTO">
+		parameterType="com.gms.web.command.Command">
 		SELECT * FROM Student WHERE id like #{search}
 		 
 </select>
@@ -83,7 +83,7 @@
 	</update>
             
          <delete id="deleteUser"
-         parameterType="com.gms.web.command.CommandDTO"
+         parameterType="com.gms.web.command.Command"
          >
          DELETE FROM Member WHERE member_id like #{search}
          

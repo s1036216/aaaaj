@@ -28,7 +28,7 @@
 
 	</div>
 	<script>
-	app.auth.init();
+	
 	</script>
 </body>
 </html>

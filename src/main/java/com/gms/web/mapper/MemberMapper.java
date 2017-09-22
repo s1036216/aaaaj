@@ -5,6 +5,7 @@ import java.util.Map;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
+import com.gms.web.command.Command;
 import com.gms.web.command.CommandDTO;
 import com.gms.web.member.MemberDTO;
 import com.gms.web.member.StudentDTO;

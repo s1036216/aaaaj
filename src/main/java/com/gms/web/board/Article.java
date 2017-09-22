@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import lombok.Data;
 @Data @Lazy @Component
-public class ArticleDTO implements Serializable{
+public class Article implements Serializable{
 	
 
 	private String id,title, content,regdate;
